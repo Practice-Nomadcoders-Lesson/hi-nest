@@ -11,12 +11,7 @@ import {
 import { Movie } from './entities/movie.entity';
 import { MoviesService } from './movies.service';
 import { CreateMovieDto } from './dto/create-movie.dto';
-
-export class UpdateMovieDto {
-  readonly title: string;
-  readonly year: number;
-  readonly genres: string[];
-}
+import { UpdateMovieDto } from './dto/update-movie.dto';
 
 @Controller('movies')
 export class MoviesController {
